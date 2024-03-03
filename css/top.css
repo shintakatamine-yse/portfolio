@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+
+.p-top__profile {
+	margin-bottom: 60px;
+}
+.p-top__profile h2 {
+	margin-bottom: 20px;
+	font-family: "parisienne";
+	font-size: 24px;
+	font-weight: 400;
+	text-align: center;
+}
+.p-top__profile h2 span {
+	font-size: 36px;
+}
+.p-top__profile--img {
+	margin-bottom: 20px;
+	text-align: center;
+	opacity: 0;
+}
+.p-top__profile--img.fadeup {
+	animation-name: fadeUpAnime;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+.p-top__profile--img img {
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+	vertical-align: bottom;
+	border-radius: 50%;
+	border: inset 5px #aaa;
+	box-sizing: border-box;
+}
+.p-top__profile--text h3 {
+	margin-bottom: 20px;
+	font-size: 24px;
+}
+.p-top__profile--text p {
+	margin-bottom: 20px;
+	font-size: 16px;
+	line-height: 1.5;
+}
+.p-top__profile--text dl dd:nth-child(2) {
+	margin-bottom: 20px;
+}
+.p-top__profile--text dl dt {
+	font-size: 18px;
+	font-weight: 700;
+}
+.p-top__profile--text dl dt span {
+	display: none;
+}
+@media (min-width: 768px){
+	.p-top__profile h2 {
+		margin-bottom: 40px;
+		font-size: 48px;
+	}
+	.p-top__profile h2 span {
+		font-size: 60px;
+	}
+}
+
+
+
+.p-top__work h2 {
+	margin-bottom: 20px;
+	font-family: "parisienne";
+	font-size: 24px;
+	font-weight: 400;
+	text-align: center;
+}
+.p-top__work h2 span {
+	font-size: 36px;
+}
+.p-top__work--contents {
+	margin-bottom: 20px;
+}
+.p-top__work--contents figure {
+	width: 100%;
+	margin-bottom: 20px;
+	opacity: 0;
+}
+.p-top__work--contents figure.fadeup {
+	animation-name: fadeUpAnime;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+.p-top__work--contents figure img {
+	width: 100%;
+	height: auto;
+	vertical-align: bottom;
+	margin-bottom: 10px;
+}
+.p-top__work--contents figure figcaption {
+	text-align: center;
+}
+.p-top__work--contents figure figcaption a {
+	color: #fff;
+}
+@media (min-width: 768px){
+	.p-top__work h2 {
+		margin-bottom: 40px;
+		font-size: 48px;
+	}
+	.p-top__work h2 span {
+		font-size: 60px;
+	}
+	.p-top__work--contents {
+		display: flex;
+		justify-content: space-between;
+	}
+	.p-top__work--contents figure {
+		width: calc((100% - 40px) / 3);
+	}
+	.p-top__work--contents figure:nth-child(2).fadeup {
+		animation-delay: 0.4s;
+	}
+	.p-top__work--contents figure:nth-child(3).fadeup {
+		animation-delay: 0.8s;
+	}
+}
+@keyframes fadeUpAnime {
+	from {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
